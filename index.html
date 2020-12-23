@@ -12,30 +12,36 @@
 
 <body>
 
-  <form
-    action="https://formspree.io/f/mdoppgyy"
-    method="POST"
-  >
+  <div class="form-container">
 
-    <input
-      type="text"
-      name="name"
-      placeholder="Name"
-    />
+    <form class="contact-form">
 
-    <input
-      type="text"
-      name="email"
-      placeholder="Email address"
-    />
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        class="contact-form__input contact-form__input--name"
+      />
 
-    <textarea name="message"></textarea>
+      <input
+        type="text"
+        name="email"
+        placeholder="Email address"
+        class="contact-form__input contact-form__input--email"
+      />
 
-    <button>
-      Submit
-    </button>
+      <textarea
+        name="message"
+        class="contact-form__input contact-form__input--message"
+      ></textarea>
 
-  </form>
+      <button class="contact-form__button contact-form__button--submit">
+        Submit
+      </button>
+
+    </form>
+
+  </div>
 
   <script src="./script.js"></script>
 
